@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deep Sea</title>
+
+    <script type="text/javascript" src="../js/up.js"></script>
+    <script type="text/javascript" src="../js/rtol.js"></script>
+    <!-- <script type="text/javascript" src="../js/badnf.js"></script> -->
+    <link rel="stylesheet" href="../css/style.css">
+
+  </head>
+  <body>
+    <a class="back"href="../index.html">
+      <!-- <div class="back"> -->
+      B
+      <!-- </div> -->
+    </a>
+    <!-- <div id="container"> -->
+      <img id="fish" src="../images/uglies.gif" width="150" height="150" >
+      <img class="octo"src="../images/octo.gif" alt="">
+      <img id="squib"src="../images/squib.gif" alt="">
+      <img id="fish1" src="../images/shark1.gif" width="150" height="150">
+      <img id="coral" src="../images/Coral3.png" width="250" height="250"alt="">
+      <img id="color1" src="../images/colorfish1.gif" alt="">
+      <img id="ship" src="../images/ship.png" alt="">
+      <img id="closed" src="../images/closed.png" alt=""  onclick="changeImage()">
+      <img id="bub"src="" onclick="toggleBub()"alt="">
+    <!-- </div> -->
+    <audio autoPlay loop hidden>
+         <source id="sound" src="../water.mp3" type="audio/mpeg">
+           unsupported audio blame ya old browser!
+      </audio>
+
+  </body>
+  <script type="text/javascript">
+
+  function changeImage() {
+
+        if (document.getElementById("closed").src.includes("/images/closed.png"))
+        {
+            document.getElementById("closed").src = "../images/chest.gif";
+            // document.getElementById("bub").visibility = "visible";
+            toggleBub();
+        }
+        else
+        {
+            document.getElementById("closed").src = "../images/closed.png";
+            // document.getElementById("bub").visibility = "hidden";
+            toggleBub();
+
+        }
+        console.log(document.getElementById("bub").src);
+    }
+
+    function toggleBub() {
+
+          if (document.getElementById("bub").src.includes("/images/upways.gif"))
+          {
+              document.getElementById("bub").src = "../images/jj.gif";
+              // document.getElementById("bub").visibility = "visible";
+          }
+          else
+          {
+              document.getElementById("bub").src = "../images/upways.gif";
+              // document.getElementById("bub").visibility = "hidden";
+
+          }
+          // console.log(document.getElementById("bub").visibility);
+      }
+  </script>
+</html>

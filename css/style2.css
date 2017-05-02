@@ -1,0 +1,74 @@
+body {
+  background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2014/04/17/335247/big_thumb_9ae6b29b84816daaae860813cd39db48.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  z-index: -1;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+#totoro {
+  /*float: right;*/
+  left: 39%;
+  top: 18%;
+  bottom: 30%;
+  position: fixed;
+  z-index: 5;
+  transform:rotateY(54deg);
+
+
+}
+#rain {
+  position: fixed;
+  background-image: url("https://media.giphy.com/media/OvFQrZk8b5N0Q/source.gif");
+  /*width: auto;*/
+  top: 3vh;;
+  z-index: 9;
+}
+#rain2 {
+  position: fixed;
+  background-image: url("../images/rain0.gif");
+  z-index: 9;
+  float: right;
+  /*width: auto;*/
+  /*overflow-x: hidden;*/
+  left: 57%;
+  /*width: 50%;*/
+}
+
+.back{
+  background-color: red;
+  opacity: .6;
+  width: 10%;
+
+  text-decoration: none;
+
+}
+
+#scamp {
+  position: fixed;
+  left: -18%;
+  top: 54vh;
+  transform:rotateY(52deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  animation-name: none;
+  /*animation-name: run;
+  animation-duration: 8s;*/
+}
+
+@keyframes run {
+    0%   {left:-12%;}
+    100% {left:53vw;;}
+}

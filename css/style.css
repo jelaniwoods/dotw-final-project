@@ -1,0 +1,165 @@
+
+body {
+  background-image: url('https://cdn1.pri.org/sites/default/files/story/images/Sea%20floor.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+#container {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+
+  margin: auto;
+  margin-top: 100px;
+
+  /*background-color: darkviolet;*/
+}
+
+#ship {
+  position: fixed;
+  top: 30vh;
+  left: 5vw;
+  width: 30%;
+  z-index: -7;
+  -webkit-filter: blur(5px);
+   filter: blur(1px);
+   visibility: visible;
+
+}
+
+#coral {
+  position: fixed;
+  /*-webkit-filter: hue-rotate(90deg);
+ filter: hue-rotate(90deg);*/
+ -webkit-filter: blur(1px);
+  filter: blur(1px);
+  left: 73vw;
+  top: 53vh;
+  z-index: -12;
+}
+
+.back{
+  background-color: red;
+  opacity: .6;
+  width: 10%;
+  
+  text-decoration: none;
+
+}
+#squib {
+  left: 55%;
+  position: fixed;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  width: 5em;
+}
+
+#fish {
+  position: fixed;
+  left: -150px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#fish1 {
+  position: fixed;
+  top: 150px;
+  left: 750px;
+  transform:rotateY(-15deg);
+
+}
+
+#color1 {
+  right: 60vw;
+  /*animation-name: shimy;*/
+  /*animation-duration: 4s;*/
+  opacity: .6;
+  /*animation-delay: 2s;
+  animation-iteration-count: 3;*/
+}
+
+#closed {
+  position: fixed;
+  left: 50vw;
+  top: 40vh;
+  /*-webkit-filter: hue-rotate(40deg);
+ filter: hue-rotate(40deg);*/
+ -webkit-filter: blur(5px);
+  filter: blur(1px);
+  visibility: visible;
+}
+#bub {
+  position: absolute;
+  left: 54vw;
+  top: 5vh;
+  /*visibility: hidden;*/
+
+}
+/*
+#closed:hover {
+  display: none;
+}*/
+
+@keyframes shimy {
+  0% {
+    transform:translateX(20%);
+    /*opacity: 0;*/
+  }
+  5% {
+      transform:translateX(-50%);
+      opacity: 2%;
+  }
+  15% {
+    transform:translateX(0);
+    padding-bottom: 5px;
+  }
+  30% {
+    transform:translateX(70%);
+  }
+
+  40% {
+      transform:translateX(0%);
+      padding-bottom: 6px;
+  }
+
+  50% {
+    transform:translateX(-30%);
+  }
+
+  70% {
+    transform:translateX(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+    transform:translateX(15%);
+  }
+  90% {
+    transform:translateX(0%);
+    padding-bottom: 8px;
+  }
+  95% {
+    transform:translateX(7%);
+  }
+  97% {
+    transform:translateX(0%);
+    padding-bottom: 9px;
+  }
+  99% {
+    transform:translateX(3%);
+  }
+  100% {
+    transform:translateX(60&);
+    padding-bottom: 9px;
+    opacity: 1;
+  }
+
+}
